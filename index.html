@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LyHourFX | Gold News Desk</title>
+<style>
+:root{--bg:#0c0e12;--pn:#151921;--bd:#232a36;--tx:#e3e7ee;--mu:#8793a5;--up:#22c58b;--dn:#f0506e;--gd:#f5b842;--ac:#4c9aff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f1ea;--pn:#fff;--bd:#ddd8c8;--tx:#1d2330;--mu:#6c7587;--gd:#b07d0a}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:14px}h1{margin:0;font-size:20px;color:var(--gd)}.mu{color:var(--mu)}
+.pn{background:var(--pn);border:1px solid var(--bd);border-radius:10px;padding:12px;margin-top:12px}
+.row{display:grid;gap:12px;grid-template-columns:1fr 2fr}@media(max-width:720px){.row{grid-template-columns:1fr}}
+.big{font:700 30px ui-monospace,Menlo,monospace}.up{color:var(--up)}.dn{color:var(--dn)}
+.bar{height:10px;border-radius:5px;background:linear-gradient(90deg,var(--dn),var(--bd) 50%,var(--up));position:relative;margin:10px 0}
+.bar i{position:absolute;top:-4px;width:4px;height:18px;background:var(--tx);border-radius:2px;transition:left .3s}
+textarea,select,button{background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:6px;padding:7px 10px;font:inherit}
+textarea{width:100%;min-height:70px;resize:vertical}button{cursor:pointer}button.p{background:var(--gd);color:#111;border:0;font-weight:600}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.tag{font-size:11px;padding:1px 6px;border-radius:4px;border:1px solid var(--bd);margin-right:4px;white-space:nowrap}
+.n{padding:10px 0;border-bottom:1px solid var(--bd)}.n:last-child{border:0}.ai{margin-top:6px;padding:7px 9px;border-left:3px solid var(--gd);background:var(--bg);border-radius:0 6px 6px 0}
+.warn{border-color:var(--dn);color:var(--dn)}.ok{border-color:var(--up);color:var(--up)}
+</style></head><body><div class="w">
+<h1>LyHourFX · XAUUSD News Desk</h1>
+<div class="ctl" style="margin:8px 0"><a href="https://www.forexfactory.com/calendar" target="_blank" rel="noopener noreferrer" style="background:var(--gd);color:#111;font-weight:600;border-radius:6px;padding:7px 12px;text-decoration:none">Open Forex Factory Calendar ↗</a><a href="https://www.investing.com/economic-calendar/" target="_blank" rel="noopener noreferrer" style="border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:7px 12px;text-decoration:none">Investing.com ↗</a><a href="https://www.tradingview.com/economic-calendar/" target="_blank" rel="noopener noreferrer" style="border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:7px 12px;text-decoration:none">TradingView ↗</a></div><div class="mu">Paste Forex Factory headlines, calendar events or social posts. The AI engine scores each one for gold and builds today’s bias.</div>
+
+<div class="row">
+ <div class="pn"><div class="mu">Today’s gold bias</div><div class="big" id="lbl">–</div><div class="bar"><i id="pt" style="left:50%"></i></div>
+ <div id="pct" style="font-weight:600"></div><div class="mu" id="sub"></div></div>
+ <div class="pn"><b>Add news</b> <span class="mu" style="font-size:12px">Enter = analyze · paste many lines at once · Shift+Enter = new line</span>
+ <textarea id="txt" placeholder="e.g. Fed officials hint at rate cut as US dollar weakens…"></textarea>
+ <div class="ctl"><select id="src"><option value="ff">Forex Factory</option><option value="ig">Instagram / social (unverified)</option><option value="ot">Other news site</option></select>
+ <select id="imp"><option value="3">High impact</option><option value="2" selected>Medium</option><option value="1">Low</option></select>
+ <button class="p" id="add">Analyze</button><button id="clr">Clear all</button></div></div>
+</div>
+
+<div class="pn"><b>Tomorrow: Wed, Nov 25, 2026</b> <span class="mu">(gold-relevant US events)</span>
+<div class="n"><span class="tag hi" style="color:var(--dn);border-color:var(--dn)">HIGH</span><b>8:30 ET (20:30 Phnom Penh)</b> US PCE price index, October<div class="mu">Hotter than forecast: bearish for gold (dollar and yields up, December rate cut hopes fade). Cooler than forecast: bullish for gold.</div></div>
+<div class="n"><span class="tag" style="color:var(--dn);border-color:var(--dn)">HIGH</span><b>8:30 ET (20:30 Phnom Penh)</b> US GDP, Q3 second estimate<div class="mu">Stronger than forecast: bearish for gold. Weaker: bullish for gold.</div></div>
+<div class="n"><span class="tag" style="color:var(--gd);border-color:var(--gd)">MED</span><b>8:30 ET (20:30 Phnom Penh)</b> US initial jobless claims (moved up a day for Thanksgiving)<div class="mu">Higher claims: bullish for gold. Lower claims: bearish.</div></div>
+<div class="mu" style="font-size:12px;margin-top:8px">Thin liquidity: US stocks close early (1:00 pm ET) before Thanksgiving, so a surprise at 8:30 ET can move gold harder than usual. Thursday is a US holiday and Friday is an early close. Next big event: FOMC decision on Dec 9. Forecasts weren't published yet when I checked, so open the calendar for forecast vs previous and any extra events.</div></div>
+<div style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))"><div class="pn" id="usd"></div><div class="pn" id="yld"></div></div>
+<div class="pn"><div class="ctl" style="margin:0 0 6px;align-items:center"><b style="flex:1">Gold news feed</b>
+<select id="fs"><option value="all">All sources</option><option value="ff">Forex Factory</option><option value="ig">Social</option><option value="ot">Other</option></select></div>
+<div id="list"></div></div>
+<div class="mu" style="margin-top:12px;font-size:12px">Educational tool, not financial advice. Pip estimates are rough typical ranges (1 pip = $0.10 on gold), not predictions; real moves depend on forecast vs actual and market positioning. Scores come from a keyword model and are only a starting point. Social “leaks” are often wrong or fake: confirm with a trusted source and always use a stop-loss.</div>
+</div>
+<script>
+const $=i=>document.getElementById(i),KEY='gold_news_v1';
+const BULL={'rate cut':3,'cuts rates':3,'dovish':3,'dollar weak':3,'dollar slips':3,'weaker dollar':3,'yields fall':3,'yields drop':3,'safe haven':3,'safe-haven':3,'war':2,'escalat':2,'tension':2,'conflict':2,'central bank buying':3,'etf inflow':2,'weak jobs':2,'jobs miss':2,'recession':2,'cooling inflation':2,'inflation cools':2,'cools':1,'slows':1,'sanctions':1};
+const BEAR={'rate hike':3,'hawkish':3,'dollar strong':3,'dollar rises':3,'stronger dollar':3,'yields rise':3,'yields jump':3,'strong jobs':2,'jobs beat':2,'beats forecast':2,'inflation hot':2,'inflation rises':2,'ceasefire':2,'peace deal':2,'easing tension':2,'etf outflow':2,'risk-on':1,'higher for longer':3,'delay cut':3};
+const CRED={ff:{n:'Verified calendar/news',w:1,c:'ok'},ot:{n:'Media source',w:.8,c:'ok'},ig:{n:'Unverified social',w:.3,c:'warn'}};
+const SEED=[{s:'ff',i:3,t:'US core inflation cools, markets raise bets on a Fed rate cut and the dollar slips'},{s:'ot',i:2,t:'Geopolitical tension escalates, investors seek safe-haven assets'},{s:'ig',i:2,t:'Leak: Fed to hike again, strong jobs beat forecasts, yields jump'},{s:'ff',i:2,t:'US jobs beat forecasts, yields rise as Fed stays hawkish'}];
+let items=[];
+function load(){try{items=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}if(!items)items=SEED.map((x,i)=>score({...x,ts:Date.now()-i*7*60000}))}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}}
+// Replace with a backend call to an LLM for deeper analysis
+function score(x){const t=x.t.toLowerCase(),why=[];let r=0;
+ for(const k in BULL)if(t.includes(k)){r+=BULL[k];why.push('+ '+k)}
+ for(const k in BEAR)if(t.includes(k)){r-=BEAR[k];why.push('− '+k)}
+ const c=CRED[x.s],v=Math.max(-10,Math.min(10,r))*x.i*c.w;return{...x,raw:r,sc:v,why}}
+function agg(){const f=items.filter(n=>n.raw!==0);if(!f.length)return 0;const tot=f.reduce((a,n)=>a+n.sc,0),mx=f.reduce((a,n)=>a+10*n.i*CRED[n.s].w,0);return Math.round(tot/mx*100*1.8)}
+function verdict(n){const a=Math.abs(n.sc);const d=n.raw>0?'Bullish for gold':n.raw<0?'Bearish for gold':'Neutral / unclear';
+ let a2=n.raw===0?'No clear gold driver found.':n.s==='ig'?'Unconfirmed leak. Treat as rumor and wait for a verified source before acting.':n.i===3?'High impact: expect volatility. Let the first spike settle, then look for a pullback entry in the bias direction.':'Context only; confirm with price action.';
+ return{d,a2,cls:n.raw>0?'up':n.raw<0?'dn':'mu'}}
+const USDM={'dollar strong':3,'dollar rises':3,'stronger dollar':3,'dollar gains':3,'hawkish':3,'rate hike':3,'strong jobs':2,'jobs beat':2,'beats forecast':2,'inflation hot':2,'inflation rises':2,'higher for longer':3,'delay cut':3,'yields rise':2,'yields jump':2,'dollar weak':-3,'dollar slips':-3,'weaker dollar':-3,'dollar falls':-3,'dovish':-3,'rate cut':-3,'cuts rates':-3,'weak jobs':-2,'jobs miss':-2,'inflation cools':-2,'cools':-1,'slows':-1,'recession':-2,'yields fall':-2,'yields drop':-2};
+const YLDM={'yields rise':3,'yields jump':3,'hawkish':3,'rate hike':3,'strong jobs':2,'jobs beat':2,'beats forecast':2,'inflation hot':2,'inflation rises':2,'higher for longer':3,'delay cut':3,'treasury selloff':3,'yields fall':-3,'yields drop':-3,'dovish':-3,'rate cut':-3,'cuts rates':-3,'weak jobs':-2,'jobs miss':-2,'inflation cools':-2,'cools':-1,'slows':-1,'recession':-2,'safe haven':-2,'safe-haven':-2};
+function mac(D){let u=0,d=0,r=[];items.forEach(n=>{const t=n.t.toLowerCase();let s=0,ks=[];for(const k in D)if(t.includes(k)){s+=D[k];ks.push(k)}const v=s*n.i*CRED[n.s].w;if(v>0)u+=v;else d-=v;if(v)r.push({n,v,ks})});r.sort((a,b)=>Math.abs(b.v)-Math.abs(a.v));const t=u+d;return{t,r,p:t?Math.round(u/t*100):0}}
+function card(id,title,up,dn){const m=mac(id==='usd'?USDM:YLDM),e=$(id);if(!m.t){e.innerHTML=`<b>${title}</b><div class="mu">No clear signal yet</div>`;return}const p=m.p,nm=id==='usd'?'dollar':'yields',why='<div style="font-size:12px;margin-top:8px"><b>Why (top news drivers):</b></div>'+m.r.slice(0,3).map(x=>`<div class="mu" style="font-size:12px;padding:3px 0">${x.v>0?'▲ lifts':'▼ pressures'} ${nm}: ${x.n.t.slice(0,90).replace(/</g,'&lt;')} <i>(${x.ks.join(', ')}${x.n.s==='ig'?', unverified':''})</i></div>`).join(''),g=p>=60?['Headwind for gold','dn']:p<=40?['Tailwind for gold','up']:['Neutral for gold','mu'];e.innerHTML=`<b>${title}</b><div style="font-weight:600;margin:4px 0"><span class="up">${up} ${p}%</span> · <span class="dn">${dn} ${100-p}%</span></div><div class="bar"><i style="left:${p}%"></i></div>${why}<div style="margin-top:6px"><b class="${g[1]}">${g[0]}</b> <span class="mu">Gold usually moves opposite to the ${id==='usd'?'dollar':'yields'}, but not always.</span></div>`}
+function renderMacro(){card('usd','US Dollar (DXY) bias','Stronger','Weaker');card('yld','US 10Y yield bias','Rising','Falling')}
+const PB={3:[150,400],2:[60,150],1:[20,60]},IL={3:'High',2:'Medium',1:'Low'};
+function est(n){if(!n.raw)return null;const b=PB[n.i],f=Math.max(.4,Math.min(1,Math.abs(n.raw)/5));return[Math.round(b[0]*f/10)*10,Math.round(b[1]*f/10)*10]}
+function logPips(k){const v=parseFloat($('pa'+k).value);if(isNaN(v))return;items[k].act=v;save();render()}
+function pipLine(n){const e=est(n);if(!e)return '';const k=items.indexOf(n),up=n.raw>0,sg=up?'+':'-',cl=up?'up':'dn',lg=items.filter(x=>x.i===n.i&&x.act!=null),av=lg.length?Math.round(lg.reduce((a,x)=>a+Math.abs(x.act),0)/lg.length):null;
+const inp=n.act!=null?`<div>Actual move you logged: <b>${n.act>0?'+':''}${n.act} pips</b></div>`:`<input type="number" id="pa${k}" placeholder="actual pips" style="width:100px;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:6px;padding:3px 6px"> <button onclick="logPips(${k})">Log</button>`;
+return `<div style="margin-top:6px"><b class="${cl}">${up?'▲':'▼'} Est. move ${sg}${e[0]} to ${sg}${e[1]} pips</b> <span class="mu">(about $${e[0]/10} to $${e[1]/10}${n.s==='ig'?', only if confirmed':''})</span></div>${av!=null?`<div class="mu" style="font-size:12px">Your logged average for ${IL[n.i]}-impact news: ${av} pips (${lg.length} logged)</div>`:''}<div style="margin-top:4px">${inp}</div>`}
+function ago(ts){const s=Math.max(0,Math.floor((Date.now()-ts)/1000));return s<60?s+'s ago':s<3600?Math.floor(s/60)+'m ago':s<86400?Math.floor(s/3600)+'h ago':Math.floor(s/86400)+'d ago'}
+function fmt(ts){return new Date(ts).toLocaleString([],{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'})+' <span class="ago" data-ts="'+ts+'">'+ago(ts)+'</span>'}
+function conf(n){return n.raw===0?0:Math.min(95,Math.round(Math.min(Math.abs(n.raw),6)/6*100*CRED[n.s].w))}
+function render(){const s=$('fs').value,a=Math.max(-100,Math.min(100,agg()));
+ $('lbl').textContent=(a>=25?'Bullish':a<=-25?'Bearish':'Mixed')+' · '+(a>0?'+':'')+a;$('lbl').className='big '+(a>=25?'up':a<=-25?'dn':'');
+ $('pt').style.left=(50+a/2)+'%';
+ const bw=items.reduce((x,n)=>x+(n.sc>0?n.sc:0),0),sw=items.reduce((x,n)=>x+(n.sc<0?-n.sc:0),0),tw=bw+sw,bp=tw?Math.round(bw/tw*100):0;
+ $('pct').innerHTML=tw?`<span class="up">Bullish ${bp}%</span> · <span class="dn">Bearish ${100-bp}%</span>`:'<span class="mu">No clear signal yet</span>';
+ const nb=items.filter(n=>n.raw>0).length,nr=items.filter(n=>n.raw<0).length;
+ renderMacro();
+ $('sub').textContent=`${nb} bullish · ${nr} bearish · ${items.length} items. `+(a>=25?'News flow leans toward buying dips. Wait for a setup.':a<=-25?'News flow leans toward selling rallies. Wait for a setup.':'Conflicting news. Low conviction, smaller size or stand aside.');
+ $('list').innerHTML=items.filter(n=>s==='all'||n.s===s).map(n=>{const v=verdict(n),c=CRED[n.s];return `<div class="n"><span class="tag ${c.c}">${c.n}</span><span class="tag">${['','Low','Med','High'][n.i]} impact</span>${n.ts?'<span class="mu" style="font-size:12px">'+fmt(n.ts)+'</span>':''}<div style="margin-top:4px">${n.t.replace(/</g,'&lt;')}</div><div class="ai"><b class="${v.cls}">${v.d}</b> <span class="mu">(score ${Math.round(n.sc)} · ${conf(n)}% confidence)</span><br>${v.a2}${pipLine(n)}${n.why.length?'<div class="mu" style="font-size:12px">Drivers: '+n.why.join(', ')+'</div>':''}</div></div>`}).join('')||'<span class="mu">No news yet.</span>'}
+function ingest(t,s,i,ts){items.unshift(score({s:s||'ot',i:i||2,t,ts:ts||Date.now()}));save();render()}
+window.ingest=ingest;
+$('add').onclick=()=>{$('txt').value.split('\n').map(l=>l.trim()).filter(Boolean).forEach(l=>items.unshift(score({s:$('src').value,i:+$('imp').value,t:l,ts:Date.now()})));$('txt').value='';save();render()};
+$('txt').onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();$('add').click()}};
+$('clr').onclick=()=>{items=[];save();render()};$('fs').onchange=render;
+load();render();setInterval(()=>{document.querySelectorAll('.ago').forEach(e=>e.textContent=ago(+e.dataset.ts))},1000);
+</script></body></html>
